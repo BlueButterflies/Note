@@ -1,4 +1,4 @@
-﻿namespace BlockNote
+﻿namespace Note
 {
     partial class Info
     {
@@ -87,7 +87,7 @@
             // 
             // pictureBrand
             // 
-            this.pictureBrand.Image = global::BlockNote.Properties.Resources.iconfinder_photoshop_33703;
+            this.pictureBrand.Image = global::Note.Properties.Resources.iconfinder_photoshop_33703;
             this.pictureBrand.Location = new System.Drawing.Point(339, 146);
             this.pictureBrand.Name = "pictureBrand";
             this.pictureBrand.Size = new System.Drawing.Size(58, 44);
@@ -97,7 +97,7 @@
             // 
             // pictureCopy
             // 
-            this.pictureCopy.Image = global::BlockNote.Properties.Resources.iconfinder_BT_copyright_905542;
+            this.pictureCopy.Image = global::Note.Properties.Resources.iconfinder_BT_copyright_905542;
             this.pictureCopy.Location = new System.Drawing.Point(161, 102);
             this.pictureCopy.Name = "pictureCopy";
             this.pictureCopy.Size = new System.Drawing.Size(31, 31);
@@ -106,7 +106,7 @@
             // 
             // pictureIcon
             // 
-            this.pictureIcon.Image = global::BlockNote.Properties.Resources.iconfinder_blog_465048;
+            this.pictureIcon.Image = global::Note.Properties.Resources.iconfinder_blog_465048;
             this.pictureIcon.InitialImage = null;
             this.pictureIcon.Location = new System.Drawing.Point(-1, 15);
             this.pictureIcon.Name = "pictureIcon";

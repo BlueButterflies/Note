@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BlockNote.Properties {
+namespace Note.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

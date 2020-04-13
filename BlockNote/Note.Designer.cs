@@ -1,4 +1,4 @@
-﻿namespace BlockNote
+﻿namespace Note
 {
     partial class Note
     {
@@ -577,14 +577,19 @@
             // 
             // printDialog
             // 
+            this.printDialog.Document = this.Document;
             this.printDialog.UseEXDialog = true;
             // 
             // openDocument
             // 
+            this.openDocument.DefaultExt = "txt";
             this.openDocument.FileName = "File";
+            this.openDocument.Filter = "File Txt|*.txt|File All|*.*|File Pptxt|*.pptxt|File Docx|*.docx";
             // 
             // contextMenu
             // 
+            this.contextMenu.BackColor = System.Drawing.Color.White;
+            this.contextMenu.Font = new System.Drawing.Font("Segoe Print", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoContext,
             this.cutContext,
@@ -593,14 +598,15 @@
             this.deleteContext,
             this.selectAllContext,
             this.searchWithContext});
+            this.contextMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(165, 158);
+            this.contextMenu.Size = new System.Drawing.Size(185, 186);
             // 
             // undoContext
             // 
             this.undoContext.Name = "undoContext";
             this.undoContext.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoContext.Size = new System.Drawing.Size(164, 22);
+            this.undoContext.Size = new System.Drawing.Size(184, 26);
             this.undoContext.Text = "Undo";
             this.undoContext.Click += new System.EventHandler(this.undoContext_Click);
             // 
@@ -608,7 +614,7 @@
             // 
             this.cutContext.Name = "cutContext";
             this.cutContext.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutContext.Size = new System.Drawing.Size(164, 22);
+            this.cutContext.Size = new System.Drawing.Size(184, 26);
             this.cutContext.Text = "Cut";
             this.cutContext.Click += new System.EventHandler(this.cutContext_Click);
             // 
@@ -616,7 +622,7 @@
             // 
             this.copyContext.Name = "copyContext";
             this.copyContext.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyContext.Size = new System.Drawing.Size(164, 22);
+            this.copyContext.Size = new System.Drawing.Size(184, 26);
             this.copyContext.Text = "Copy";
             this.copyContext.Click += new System.EventHandler(this.copyContext_Click);
             // 
@@ -624,7 +630,7 @@
             // 
             this.pasteContext.Name = "pasteContext";
             this.pasteContext.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteContext.Size = new System.Drawing.Size(164, 22);
+            this.pasteContext.Size = new System.Drawing.Size(184, 26);
             this.pasteContext.Text = "Paste";
             this.pasteContext.Click += new System.EventHandler(this.pasteContext_Click);
             // 
@@ -632,7 +638,7 @@
             // 
             this.deleteContext.Name = "deleteContext";
             this.deleteContext.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.deleteContext.Size = new System.Drawing.Size(164, 22);
+            this.deleteContext.Size = new System.Drawing.Size(184, 26);
             this.deleteContext.Text = "Delete";
             this.deleteContext.Click += new System.EventHandler(this.deleteContext_Click);
             // 
@@ -640,7 +646,7 @@
             // 
             this.selectAllContext.Name = "selectAllContext";
             this.selectAllContext.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.selectAllContext.Size = new System.Drawing.Size(164, 22);
+            this.selectAllContext.Size = new System.Drawing.Size(184, 26);
             this.selectAllContext.Text = "Select All";
             this.selectAllContext.Click += new System.EventHandler(this.selectAllContext_Click);
             // 
@@ -650,20 +656,20 @@
             this.googleContext,
             this.bingContext});
             this.searchWithContext.Name = "searchWithContext";
-            this.searchWithContext.Size = new System.Drawing.Size(164, 22);
+            this.searchWithContext.Size = new System.Drawing.Size(184, 26);
             this.searchWithContext.Text = "Search with...";
             // 
             // googleContext
             // 
             this.googleContext.Name = "googleContext";
-            this.googleContext.Size = new System.Drawing.Size(112, 22);
+            this.googleContext.Size = new System.Drawing.Size(119, 26);
             this.googleContext.Text = "Google";
             this.googleContext.Click += new System.EventHandler(this.googleContext_Click);
             // 
             // bingContext
             // 
             this.bingContext.Name = "bingContext";
-            this.bingContext.Size = new System.Drawing.Size(112, 22);
+            this.bingContext.Size = new System.Drawing.Size(119, 26);
             this.bingContext.Text = "Bing";
             this.bingContext.Click += new System.EventHandler(this.bingContext_Click);
             // 
@@ -677,7 +683,7 @@
             this.txtGoTo,
             this.toolStripSeparator7,
             this.btnGo});
-            this.toolGoTo.Location = new System.Drawing.Point(0, 121);
+            this.toolGoTo.Location = new System.Drawing.Point(0, 119);
             this.toolGoTo.Name = "toolGoTo";
             this.toolGoTo.Size = new System.Drawing.Size(582, 28);
             this.toolGoTo.TabIndex = 4;
@@ -705,7 +711,7 @@
             this.txtGoTo.Font = new System.Drawing.Font("Segoe Print", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGoTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.txtGoTo.Name = "txtGoTo";
-            this.txtGoTo.Size = new System.Drawing.Size(150, 27);
+            this.txtGoTo.Size = new System.Drawing.Size(200, 25);
             // 
             // toolStripSeparator7
             // 
@@ -715,11 +721,12 @@
             // btnGo
             // 
             this.btnGo.AutoSize = false;
+            this.btnGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnGo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnGo.Font = new System.Drawing.Font("Segoe Print", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGo.Image = ((System.Drawing.Image)(resources.GetObject("btnGo.Image")));
-            this.btnGo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnGo.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(40, 25);
             this.btnGo.Text = "Go";
@@ -727,6 +734,7 @@
             // 
             // panel
             // 
+            this.panel.AutoSize = true;
             this.panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel.Controls.Add(this.txtReplace);
             this.panel.Controls.Add(this.txtFind);
@@ -740,7 +748,7 @@
             this.panel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel.Location = new System.Drawing.Point(0, 45);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(582, 76);
+            this.panel.Size = new System.Drawing.Size(582, 74);
             this.panel.TabIndex = 6;
             // 
             // txtReplace
@@ -748,9 +756,9 @@
             this.txtReplace.BackColor = System.Drawing.SystemColors.Info;
             this.txtReplace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtReplace.Location = new System.Drawing.Point(108, 44);
+            this.txtReplace.Location = new System.Drawing.Point(78, 44);
             this.txtReplace.Name = "txtReplace";
-            this.txtReplace.Size = new System.Drawing.Size(146, 27);
+            this.txtReplace.Size = new System.Drawing.Size(223, 27);
             this.txtReplace.TabIndex = 6;
             // 
             // txtFind
@@ -758,9 +766,9 @@
             this.txtFind.BackColor = System.Drawing.SystemColors.Info;
             this.txtFind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtFind.Location = new System.Drawing.Point(108, 8);
+            this.txtFind.Location = new System.Drawing.Point(78, 8);
             this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(146, 27);
+            this.txtFind.Size = new System.Drawing.Size(223, 27);
             this.txtFind.TabIndex = 5;
             // 
             // labelReplace
@@ -786,8 +794,10 @@
             // btnReplace
             // 
             this.btnReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnReplace.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnReplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReplace.Font = new System.Drawing.Font("Segoe Print", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReplace.Location = new System.Drawing.Point(347, 44);
+            this.btnReplace.Location = new System.Drawing.Point(409, 42);
             this.btnReplace.Name = "btnReplace";
             this.btnReplace.Size = new System.Drawing.Size(93, 28);
             this.btnReplace.TabIndex = 2;
@@ -798,8 +808,10 @@
             // btnFind
             // 
             this.btnFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnFind.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFind.Font = new System.Drawing.Font("Segoe Print", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(290, 8);
+            this.btnFind.Location = new System.Drawing.Point(345, 8);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(93, 28);
             this.btnFind.TabIndex = 1;
@@ -810,8 +822,10 @@
             // btnFindNext
             // 
             this.btnFindNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnFindNext.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFindNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFindNext.Font = new System.Drawing.Font("Segoe Print", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFindNext.Location = new System.Drawing.Point(410, 8);
+            this.btnFindNext.Location = new System.Drawing.Point(477, 8);
             this.btnFindNext.Name = "btnFindNext";
             this.btnFindNext.Size = new System.Drawing.Size(93, 28);
             this.btnFindNext.TabIndex = 0;
@@ -821,22 +835,31 @@
             // 
             // txtBox
             // 
+            this.txtBox.AutoWordSelection = true;
             this.txtBox.BackColor = System.Drawing.SystemColors.Info;
+            this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox.ContextMenuStrip = this.contextMenu;
             this.txtBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBox.Location = new System.Drawing.Point(0, 149);
+            this.txtBox.EnableAutoDragDrop = true;
+            this.txtBox.Location = new System.Drawing.Point(0, 147);
             this.txtBox.Name = "txtBox";
-            this.txtBox.Size = new System.Drawing.Size(582, 146);
+            this.txtBox.Size = new System.Drawing.Size(582, 148);
             this.txtBox.TabIndex = 7;
             this.txtBox.Text = "";
             this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
             // 
+            // saveDocument
+            // 
+            this.saveDocument.DefaultExt = "txt";
+            this.saveDocument.Filter = "File Txt|*.txt|File All|*.*|File Pptxt|*.pptxt|File Docx|*.docx";
+            // 
             // zoomInBox
             // 
             this.zoomInBox.AccessibleName = "";
+            this.zoomInBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.zoomInBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.zoomInBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.zoomInBox.Image = global::BlockNote.Properties.Resources.iconfinder_file_zoom_in_66784;
+            this.zoomInBox.Image = global::Note.Properties.Resources.iconfinder_file_zoom_in_66784;
             this.zoomInBox.Location = new System.Drawing.Point(420, 2);
             this.zoomInBox.Name = "zoomInBox";
             this.zoomInBox.Size = new System.Drawing.Size(50, 40);
@@ -848,9 +871,10 @@
             // 
             // zoomOutBox
             // 
+            this.zoomOutBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.zoomOutBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.zoomOutBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.zoomOutBox.Image = global::BlockNote.Properties.Resources.iconfinder_file_zoom_out_66785;
+            this.zoomOutBox.Image = global::Note.Properties.Resources.iconfinder_file_zoom_out_66785;
             this.zoomOutBox.Location = new System.Drawing.Point(476, 2);
             this.zoomOutBox.Name = "zoomOutBox";
             this.zoomOutBox.Size = new System.Drawing.Size(50, 40);
@@ -861,9 +885,10 @@
             // 
             // printBox
             // 
+            this.printBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.printBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.printBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.printBox.Image = global::BlockNote.Properties.Resources.iconfinder_printer_66871;
+            this.printBox.Image = global::Note.Properties.Resources.iconfinder_printer_66871;
             this.printBox.ImageLocation = "";
             this.printBox.Location = new System.Drawing.Point(532, 2);
             this.printBox.Name = "printBox";

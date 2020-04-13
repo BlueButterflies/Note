@@ -1,4 +1,4 @@
-﻿namespace BlockNote
+﻿namespace Note
 {
     partial class SendFeedback
     {

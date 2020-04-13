@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BlockNote
+namespace Note
 {
     public partial class Note : Form
     {
@@ -149,7 +149,6 @@ namespace BlockNote
             {
                 toolGoTo.Visible = false;
             }
-
         }
         #endregion
 
@@ -176,7 +175,11 @@ namespace BlockNote
         #region File Open
         private void openFile_Click(object sender, EventArgs e)
         {
-            Control();
+            if (txtBox.TextLength > 0)
+            {
+                Control();
+            }
+
 
             openDocument.ShowDialog();
 
@@ -665,7 +668,7 @@ namespace BlockNote
         }
         #endregion
 
-
+        #region Icons
         private void printBox_Click(object sender, EventArgs e)
         {
             printFile_Click(sender, e);
@@ -680,6 +683,7 @@ namespace BlockNote
         {
             zoomInTool_Click(sender, e);
         }
+        #endregion
     }
 }
 
