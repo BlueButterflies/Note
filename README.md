@@ -1,4 +1,4 @@
-<h3>This program is a simple Note Block where you can then write, print, save and open txt files.Also then send feedback with your Google account.
+<h3>This Desktop Application is a simple Note Block where you can then write, print, save and open txt files.Also then send feedback with your Google account.
 </h3>
 
 
