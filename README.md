@@ -1,7 +1,10 @@
 
 <p align="left"><img src="https://cdn0.iconfinder.com/data/icons/news-and-magazine/512/blog-512.png"width = 130 /> Block Note</p>
-<p align="center"><img src="https://user-images.githubusercontent.com/52591976/79236528-591f9b00-7e6d-11ea-972c-aa22a94a5d28.png"width =480/></p>
+
 <p align="center"><img src="https://user-images.githubusercontent.com/52591976/79241042-cb46ae80-7e72-11ea-83b5-f84ec27ac853.png"width =480/></p>
+
+<p align="center"><img src="https://user-images.githubusercontent.com/52591976/79236528-591f9b00-7e6d-11ea-972c-aa22a94a5d28.png"width =480/></p>
+
 
 <p align="center"><img src="https://user-images.githubusercontent.com/52591976/79240888-9f2b2d80-7e72-11ea-9c97-ba2e3438af54.png"width =480/></p>
 
