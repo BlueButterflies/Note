@@ -133,6 +133,7 @@
             this.MinimizeBox = false;
             this.Name = "Info";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info Block Note";
             this.Load += new System.EventHandler(this.Info_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBrand)).EndInit();

@@ -469,7 +469,7 @@
             this.zoomOutTool});
             this.zoomTool.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.zoomTool.Name = "zoomTool";
-            this.zoomTool.Size = new System.Drawing.Size(146, 26);
+            this.zoomTool.Size = new System.Drawing.Size(180, 26);
             this.zoomTool.Text = "Zoom";
             // 
             // zoomInTool
@@ -495,13 +495,16 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // statusBarTool
             // 
             this.statusBarTool.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.statusBarTool.Name = "statusBarTool";
-            this.statusBarTool.Size = new System.Drawing.Size(146, 26);
+            this.statusBarTool.ShortcutKeyDisplayString = "";
+            this.statusBarTool.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.S)));
+            this.statusBarTool.Size = new System.Drawing.Size(219, 26);
             this.statusBarTool.Text = "Status Bar";
             this.statusBarTool.Click += new System.EventHandler(this.statusBarTool_Click);
             // 
@@ -521,20 +524,20 @@
             // 
             this.sendFeedbackTool.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.sendFeedbackTool.Name = "sendFeedbackTool";
-            this.sendFeedbackTool.Size = new System.Drawing.Size(169, 26);
+            this.sendFeedbackTool.Size = new System.Drawing.Size(180, 26);
             this.sendFeedbackTool.Text = "Send Feedback";
             this.sendFeedbackTool.Click += new System.EventHandler(this.sendFeedbackTool_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(166, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // infoNoteTool
             // 
             this.infoNoteTool.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.infoNoteTool.Name = "infoNoteTool";
-            this.infoNoteTool.Size = new System.Drawing.Size(169, 26);
+            this.infoNoteTool.Size = new System.Drawing.Size(180, 26);
             this.infoNoteTool.Text = "Info Note";
             this.infoNoteTool.Click += new System.EventHandler(this.infoNoteTool_Click);
             // 
@@ -711,7 +714,7 @@
             this.txtGoTo.Font = new System.Drawing.Font("Segoe Print", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGoTo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.txtGoTo.Name = "txtGoTo";
-            this.txtGoTo.Size = new System.Drawing.Size(200, 25);
+            this.txtGoTo.Size = new System.Drawing.Size(200, 27);
             // 
             // toolStripSeparator7
             // 
