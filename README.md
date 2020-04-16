@@ -1,8 +1,7 @@
 <h3>
   This Desktop Application is a simple Note Block where you can then write, print, save and open txt files.
 </h3>
-<a href="<iframe src="<iframe src="https://github.com/BlueButterflies/Note/files/4489648/setup.zip</iframe>Click to Download</a>
-[setup.zip](https://github.com/BlueButterflies/Note/files/4489648/setup.zip)
+<a href="https://github.com/BlueButterflies/Note/files/4489648/setup.zip" download>Click to Download</a>
 
 
 <p align="left">
