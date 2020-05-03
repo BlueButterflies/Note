@@ -14,5 +14,3 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/52591976/79784606-cab28a00-8342-11ea-9733-dbd32bafc4bd.png"width =500/>
 </p>
-  
-<h4>I am open for suggestions and improvements.</h4>
