@@ -7,7 +7,7 @@
 <p>
   <a href="https://github.com/BlueButterflies/Note/files/4489648/setup.zip" download>
     <h2 align="center">
-      Click to download my Note Block to try it!
+      Click to download Note Block to try it!
     </h2>
   </a>
 </p>
