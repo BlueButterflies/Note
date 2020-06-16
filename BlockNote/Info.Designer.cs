@@ -32,10 +32,8 @@
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelLicense = new System.Windows.Forms.Label();
             this.labelCopyRight = new System.Windows.Forms.Label();
-            this.pictureBrand = new System.Windows.Forms.PictureBox();
             this.pictureCopy = new System.Windows.Forms.PictureBox();
             this.pictureIcon = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBrand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCopy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIcon)).BeginInit();
             this.SuspendLayout();
@@ -67,11 +65,11 @@
             this.labelLicense.AutoSize = true;
             this.labelLicense.Font = new System.Drawing.Font("Segoe Print", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLicense.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.labelLicense.Location = new System.Drawing.Point(177, 157);
+            this.labelLicense.Location = new System.Drawing.Point(209, 158);
             this.labelLicense.Name = "labelLicense";
-            this.labelLicense.Size = new System.Drawing.Size(156, 23);
+            this.labelLicense.Size = new System.Drawing.Size(187, 23);
             this.labelLicense.TabIndex = 4;
-            this.labelLicense.Text = "License to:  SoftPlume";
+            this.labelLicense.Text = "License to:  BlueButterflies";
             // 
             // labelCopyRight
             // 
@@ -84,16 +82,6 @@
             this.labelCopyRight.TabIndex = 3;
             this.labelCopyRight.Text = "Copyright 2020 - All rights reserved";
             this.labelCopyRight.UseCompatibleTextRendering = true;
-            // 
-            // pictureBrand
-            // 
-            this.pictureBrand.Image = global::Note.Properties.Resources.iconfinder_photoshop_33703;
-            this.pictureBrand.Location = new System.Drawing.Point(339, 146);
-            this.pictureBrand.Name = "pictureBrand";
-            this.pictureBrand.Size = new System.Drawing.Size(58, 44);
-            this.pictureBrand.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBrand.TabIndex = 6;
-            this.pictureBrand.TabStop = false;
             // 
             // pictureCopy
             // 
@@ -121,7 +109,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(436, 210);
-            this.Controls.Add(this.pictureBrand);
             this.Controls.Add(this.pictureCopy);
             this.Controls.Add(this.labelLicense);
             this.Controls.Add(this.labelCopyRight);
@@ -136,7 +123,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info Block Note";
             this.Load += new System.EventHandler(this.Info_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBrand)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCopy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIcon)).EndInit();
             this.ResumeLayout(false);
@@ -152,6 +138,5 @@
         private System.Windows.Forms.Label labelCopyRight;
         private System.Windows.Forms.Label labelLicense;
         private System.Windows.Forms.PictureBox pictureCopy;
-        private System.Windows.Forms.PictureBox pictureBrand;
     }
 }
