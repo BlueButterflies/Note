@@ -5,7 +5,7 @@
   <img src="https://user-images.githubusercontent.com/52591976/79505795-3809a680-8035-11ea-9966-0f9fe8d5afc6.png"width =200/>
 </p>
 <p>
-  <a href="https://github.com/BlueButterflies/Phonebook/files/4786485/noteSetup.zip" download>
+  <a href="https://github.com/BlueButterflies/Note/files/4786503/calculatorSetup.zip" download>
     <h2 align="center">
       Click to download Note Block to try it!
     </h2>
