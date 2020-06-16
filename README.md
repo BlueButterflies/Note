@@ -14,3 +14,8 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/52591976/79784606-cab28a00-8342-11ea-9733-dbd32bafc4bd.png"width =500/>
 </p>
+<div>
+<h1> LICENSE <h1/>
+
+<h3> This project is licensed under the MIT License - see the <a href="https://github.com/BlueButterflies/Note/blob/master/LICENSE">LICENSE.md<a/> file for details <h3/>
+<div/>
