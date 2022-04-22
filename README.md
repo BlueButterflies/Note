@@ -16,5 +16,8 @@
 <div>
 <h1 align="center"> LICENSE <h1/>
 
-<h3> This project is licensed under the MIT License - see the <a href="https://github.com/BlueButterflies/Note/blob/master/LICENSE">LICENSE.md<a/> file for details <h3/>
+<p>
+  <h3> This project is licensed under the MIT License - see the</h3>
+  <h2><a href="https://github.com/BlueButterflies/Note/blob/master/LICENSE">LICENSE.md</h2>
+  <h3>file for details </h3></>
 <div/>
